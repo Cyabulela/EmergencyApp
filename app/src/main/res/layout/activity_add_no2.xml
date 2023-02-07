@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="50dp"
+    tools:context=".AddNoActivity2"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Emergency Contact"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"/>
+
+    <EditText
+        android:id="@+id/nameT"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:layout_margin="50dp"
+        android:padding="10dp"
+        android:background="#CDC6C6"
+        android:hint="Name"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/phoneT"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="#E1CDCD"
+        android:hint="Phone number"
+        android:padding="10dp"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/saveB"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_margin="50dp"
+        android:text="Save"
+        android:backgroundTint="#444444"
+        android:textAllCaps="false" />
+
+</LinearLayout>

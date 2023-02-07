@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    tools:context=".SignIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/sos_app_icon2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:background="@drawable/rounded"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_marginTop="30dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_baseline_password"
+            android:background="@drawable/rounded"
+            android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/sign_button"
+            android:layout_marginTop="40dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Sign In"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/cancel_sign_in"
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Cancel"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/to_signup_activity"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account, click here"
+            android:textColor="#0A0AA8"/>
+
+        <TextView
+            android:id="@+id/to_forgot_password_activity"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:textColor="#A80A17"/>
+    </LinearLayout>
+    
+
+
+</LinearLayout>

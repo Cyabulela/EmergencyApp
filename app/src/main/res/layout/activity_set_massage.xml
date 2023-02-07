@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setMassage"
+    android:layout_gravity="center"
+    android:paddingHorizontal="50dp"
+    android:background="#D8D8D8"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency Message"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"/>
+
+    <EditText
+        android:id="@+id/message"
+        android:background="@drawable/round2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textColor="@color/black"
+        android:padding="1dp"
+        android:gravity="start"
+        android:layout_gravity="start"
+        android:fontFamily="monospace"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        android:maxLines="5"
+        />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button2"
+        android:text="save"
+        />
+
+</LinearLayout>
